@@ -18,3 +18,9 @@ För att lagra temperatur- och fuktighetsdata i en MongoDB-databas måste du ins
 Denna kod kommer att ansluta till MongoDB-servern på IP-adressen 192.168.1.10 på port 27017, och sedan infoga ett nytt dokument i sensor_data-insamlingen för varje temperatur- och fuktighetsmätning som tas av sensorn. Dokumentet kommer att innehålla temperatur- och luftfuktighetsvärdena samt en tidsstämpel som anger när mätningen gjordes.
 
 Du kan sedan använda verktyg som MongoDB Compass eller MongoDB-skalet för att fråga och analysera data som lagras i databasen.
+## Kommunikation
+* Seriell kommunikation: Ett alternativ är att använda seriell kommunikation för att skicka data från Arduino till en dator och sedan låta datorn lagra data i en databas. För att göra detta kan du använda Arduinos seriella bibliotek för att skicka data som en sträng över en USB-anslutning till datorn. På datorn kan du använda ett programmeringsspråk som Python för att läsa data från serieporten och lagra dem i en databas.
+* Direktanslutning: Om Arduino och databasen är på samma nätverk kan du ansluta till databasen direkt från Arduino med hjälp av ett bibliotek som MySQL Connector/Arduino. Detta gör att du kan skicka SQL-kommandon till databasen för att lagra och hämta data.
+* HTTP requests: HTTP-förfrågningar: Ett annat alternativ är att använda HTTP-förfrågningar för att skicka data från Arduino till en databasserver. För att göra detta kan du använda Arduinos Ethernet- eller WiFi-bibliotek för att skicka HTTP POST- eller GET-förfrågningar till en server som kör en databas. Servern kan sedan lagra data i databasen.
+* Vi kommer också att behöva skapa tabeller och definiera strukturen för de data som kommer att lagras.
+Så i slutet kommer vi behöva två skript en av de ska va på databas och den andra är som läser och skickar till databas. 

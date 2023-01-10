@@ -18,7 +18,7 @@ För att använda en temperatur- och fuktighetssensor med en Arduino, måste du 
 När sensorn är ansluten till Arduino kan du använda Arduinos programmeringsspråk (vanligtvis C++ eller en variant av det) för att läsa temperatur- och luftfuktighetsvärdena från sensorn. Du kan sedan använda denna data för en mängd olika ändamål, som att visa den på en LCD-skärm, logga den till en fil eller skicka den till en fjärrserver för lagring och analys.
 För att lagra temperatur- och fuktighetsdata i en MongoDB-databas måste du installera MongoDB-databasprogramvaran på en dator eller server och ställa in en databasanslutning från Arduino till MongoDB-servern. När anslutningen är upprättad kan du använda Arduinos programmeringsspråk för att infoga temperatur- och fuktighetsdata i databasen som dokument.
 ## Visualisering
-![Bild!](Linjediagram_temperatur_humidity.png)
+![Bild!] (Linjediagram_temperatur_humidity.png)
 
 Denna kod kommer att ansluta till MongoDB-servern på IP-adressen 192.168.1.10 på port 27017, och sedan infoga ett nytt dokument i sensor_data-insamlingen för varje temperatur- och fuktighetsmätning som tas av sensorn. Dokumentet kommer att innehålla temperatur- och luftfuktighetsvärdena samt en tidsstämpel som anger när mätningen gjordes.
 

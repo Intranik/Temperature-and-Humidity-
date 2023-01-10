@@ -3,6 +3,8 @@
 ## Inledning 
 En temperatur- och luftfuktighetssensor är en enhet som mäter och registrerar temperaturen och luftfuktigheten i en given miljö. Dessa sensorer kan användas i en mängd olika applikationer, såsom övervakning av temperatur och luftfuktighet i ett växthus, ett förråd eller ett kontorsutrymme.
 För att använda en temperatur- och fuktighetssensor med en Arduino, måste du ansluta sensorn till Arduino-kortet med hjälp av kablar. Det finns många olika typer av temperatur- och luftfuktighetssensorer tillgängliga, för att kommunicera med arduio.
+## Architecture overview 
+![Architecture!](iot-security-architecture-fig1.png)
 ## Komponenter
 * Arduino Uno.
 * DHT11 Sensor (Temperatur och luftfuktighetssensor).
